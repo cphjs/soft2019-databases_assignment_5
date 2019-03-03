@@ -1,9 +1,9 @@
 
 # Exercises 
 
-[Assignment and review requirements](https://github.com/datsoftlyngby/soft2019spring-databases/blob/master/assignments/assignment5.md)
-[Material](https://github.com/datsoftlyngby/soft2019spring-databases/blob/master/lecture_notes/05-StoredProceduresAndJSON.ipynb)
-[Potential help on importing](import.md)
+- [Assignment and review requirements](https://github.com/datsoftlyngby/soft2019spring-databases/blob/master/assignments/assignment5.md)
+- [Material](https://github.com/datsoftlyngby/soft2019spring-databases/blob/master/lecture_notes/05-StoredProceduresAndJSON.ipynb)
+- [Potential help on importing](import.md)
 
 ## Exercise 1
 
@@ -102,7 +102,7 @@ WHERE posts.ParentId IS NULL;
 
 Procedure to update materialized view. Yes. It does delete the whole table every time and repopulate which takes more time than reasonable*. But I _really_ don't want to implement an incremental one.
 
-* 30 seconds on my (not very good) machine with the coffee stack exchange database
+\* 30 seconds on my (not very good) machine with the coffee stack exchange database
 ```
 CREATE PROCEDURE recomputeQuestionsWithAnswersJson()
 BEGIN
