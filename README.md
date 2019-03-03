@@ -98,6 +98,7 @@ SELECT
 FROM posts
 JOIN users ON users.Id = posts.OwnerUserId
 WHERE posts.ParentId IS NULL;
+```
 
 Procedure to update materialized view. Yes. It does delete the whole table every time and repopulate which takes more time than reasonable*. But I _really_ don't want to implement an incremental one.
 
